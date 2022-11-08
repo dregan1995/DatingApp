@@ -30,5 +30,12 @@ namespace API.Controllers.Mvc
         {
             return await _context.AppUsers.FindAsync(id);
         }
+
+        /*[HttpPost]
+        public ActionResult CreateUser(AppUser appUser)
+        {
+            var user = _context.AppUsers.Add(appUser);
+            return user;
+        }*/
     }
 }
